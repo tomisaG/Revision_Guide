@@ -6,6 +6,5 @@
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         My.Forms.Menu_Page.Text = Now.ToString
         My.Forms.Menu_Page.Show()
-        Me.Hide()
     End Sub
 End Class
