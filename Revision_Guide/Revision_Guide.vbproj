@@ -72,10 +72,28 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CreateUser.Designer.vb">
+      <DependentUpon>CreateUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CreateUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login_Page.Designer.vb">
+      <DependentUpon>Login_Page.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login_Page.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Menu_Page.Designer.vb">
       <DependentUpon>Menu_Page.vb</DependentUpon>
     </Compile>
     <Compile Include="Menu_Page.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Revision_Menu.Designer.vb">
+      <DependentUpon>Revision_Menu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Revision_Menu.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Start_Page.vb">
@@ -102,11 +120,23 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="CreateUser.resx">
+      <DependentUpon>CreateUser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login_Page.resx">
+      <DependentUpon>Login_Page.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu_Page.resx">
+      <DependentUpon>Menu_Page.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Revision_Menu.resx">
+      <DependentUpon>Revision_Menu.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Start_Page.resx">
       <DependentUpon>Start_Page.vb</DependentUpon>
@@ -122,7 +152,9 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

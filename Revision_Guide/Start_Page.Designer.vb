@@ -22,29 +22,57 @@ Partial Class Start_Page
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Start_Page))
+        Me.Cmd_Signup = New System.Windows.Forms.Button()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Cmd_Login = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
-        'Button1
+        'Cmd_Signup
         '
-        Me.Button1.Location = New System.Drawing.Point(228, 275)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(136, 47)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Start"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Cmd_Signup.Location = New System.Drawing.Point(422, 202)
+        Me.Cmd_Signup.Name = "Cmd_Signup"
+        Me.Cmd_Signup.Size = New System.Drawing.Size(125, 47)
+        Me.Cmd_Signup.TabIndex = 0
+        Me.Cmd_Signup.Text = "Signup"
+        Me.Cmd_Signup.UseVisualStyleBackColor = True
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Font = New System.Drawing.Font("Courier New", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox1.Location = New System.Drawing.Point(80, 75)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(457, 38)
+        Me.TextBox1.TabIndex = 1
+        Me.TextBox1.Text = "Computer Science Revision"
+        '
+        'Cmd_Login
+        '
+        Me.Cmd_Login.Location = New System.Drawing.Point(80, 202)
+        Me.Cmd_Login.Name = "Cmd_Login"
+        Me.Cmd_Login.Size = New System.Drawing.Size(117, 47)
+        Me.Cmd_Login.TabIndex = 2
+        Me.Cmd_Login.Text = "Login"
+        Me.Cmd_Login.UseVisualStyleBackColor = True
         '
         'Start_Page
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(630, 376)
-        Me.Controls.Add(Me.Button1)
+        Me.BackColor = System.Drawing.Color.Maroon
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.ClientSize = New System.Drawing.Size(600, 351)
+        Me.Controls.Add(Me.Cmd_Login)
+        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.Cmd_Signup)
         Me.Name = "Start_Page"
         Me.Text = "Form1"
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
-    Friend WithEvents Button1 As Button
+    Friend WithEvents Cmd_Signup As Button
+    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents Cmd_Login As Button
 End Class
