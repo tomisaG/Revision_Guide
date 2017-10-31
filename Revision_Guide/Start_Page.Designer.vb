@@ -26,6 +26,7 @@ Partial Class Start_Page
         Me.Cmd_Signup = New System.Windows.Forms.Button()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Cmd_Login = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Cmd_Signup
@@ -55,6 +56,15 @@ Partial Class Start_Page
         Me.Cmd_Login.Text = "Login"
         Me.Cmd_Login.UseVisualStyleBackColor = True
         '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(270, 290)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 3
+        Me.Button1.Text = "Button1"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'Start_Page
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -62,6 +72,7 @@ Partial Class Start_Page
         Me.BackColor = System.Drawing.Color.Maroon
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(600, 351)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Cmd_Login)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Cmd_Signup)
@@ -75,4 +86,5 @@ Partial Class Start_Page
     Friend WithEvents Cmd_Signup As Button
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents Cmd_Login As Button
+    Friend WithEvents Button1 As Button
 End Class

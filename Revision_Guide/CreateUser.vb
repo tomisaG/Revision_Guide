@@ -10,7 +10,6 @@ Public Class CreateUser
             Dim objWriter As IO.StreamWriter = IO.File.AppendText(_LogincsvCSVPath)
             If IO.File.Exists(_LogincsvCSVPath) Then
                 objWriter.Write(_txt_CreateUsername & ",")
-                objWriter.Write(Environment.NewLine)
                 objWriter.Write(_ttx_CreatePassword & ",")
 
             End If
